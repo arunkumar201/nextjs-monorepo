@@ -1,18 +1,19 @@
 {
-  "name": "nextjs-monorepo",
+  "name": "@arun/nextjs-monorepo",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "find . -type d -name 'node_modules' -prune -exec rm -rf '{}' \\; -o -type d -name '.next' -prune -exec rm -rf '{}' \\; -o -name 'pnpm.lock.yaml' -exec rm -rf '{}' \\;"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "turbo": "^2.1.1",
-    "typescript": "^5.4.5"
+    "turbo": "^2.3.2",
+    "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
   }

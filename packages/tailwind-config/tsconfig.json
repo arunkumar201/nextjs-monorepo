@@ -1,0 +1,9 @@
+{
+	"extends": "@arun/typescript-config/react-library.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"esModuleInterop": true
+	},
+	"include": ["**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}
