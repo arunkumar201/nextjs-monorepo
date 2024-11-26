@@ -1,21 +1,20 @@
 {
-  "extends": "@arun/typescript-config/nextjs.json",
-  "compilerOptions": {
-    "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "next.config.js",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+	"extends": "@arun/typescript-config/nextjs.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"],
+			"@arun/*": ["../../packages/*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"next.config.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"src/**/*.ts",
+		"src/**/*.tsx"
+	],
+	"exclude": ["node_modules"]
 }
