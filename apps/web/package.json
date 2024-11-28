@@ -12,14 +12,15 @@
   },
   "dependencies": {
     "@arun/ui": "workspace:*",
+    "lucide-react": "^0.462.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "@arun/eslint-config": "workspace:*",
-    "@arun/typescript-config": "workspace:*",
     "@arun/tailwind-config": "workspace:*",
+    "@arun/typescript-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
